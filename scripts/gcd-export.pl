@@ -22,13 +22,19 @@ my $PUBLIC_SUPPORT_TABLES =
   'stddata_country stddata_language gcd_story_type ' .
   'gcd_issue_reprint gcd_reprint gcd_reprint_from_issue ' .
   'gcd_reprint_to_issue gcd_brand_emblem_group gcd_brand_use ' .
-  'gcd_series_bond gcd_series_bond_type gcd_series_publication_type';
+  'gcd_series_bond gcd_series_bond_type gcd_series_publication_type ' .
+  'taggit_tag taggit_taggeditem django_content_type gcd_name_type ' .
+  'gcd_relation_type gcd_school gcd_degree gcd_membership_type ' .
+  'gcd_non_comic_work_role gcd_non_comic_work_type gcd_non_comic_work_year';
 
 # Tables with deleted data which will be filtered out in the dump
 # using $PUBLIC_DATA_WHERE
 my $PUBLIC_DATA_TABLES =
   'gcd_publisher gcd_brand_group gcd_brand gcd_indicia_publisher gcd_series ' .
-  'gcd_issue gcd_story';
+  'gcd_issue gcd_story gcd_award gcd_creator ' .
+  'gcd_creator_art_influence gcd_creator_award gcd_creator_degree ' .
+  'gcd_creator_membership gcd_creator_name_detail gcd_creator_non_comic_work ' .
+  'gcd_creator_relation gcd_creator_school';
 
 my $PUBLIC_DATA_WHERE = 'deleted=0';
 
